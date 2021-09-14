@@ -22,6 +22,15 @@ public class Application {
 
 		System.out.println("Iguales: " + Arbol.iguales(ArbolPar, ArbolParecido));
 		System.out.println("Iguales: " + Arbol.iguales(ArbolParecido, ArbolParecido));
+		
+
+		Ab arbolClon = Arbol.clon();
+		System.out.println("Clonar arbol: " + Arbol.iguales(Arbol, arbolClon));
+		
+		Ab arbolEspejo = Arbol.espejo();
+		
+		System.out.println("Espejo arbol espejado: " + Arbol.iguales(Arbol, arbolEspejo));
+		System.out.println("Espejo arbol igual: " + Arbol.iguales(Arbol, arbolEspejo.espejo()));
 	}
 
 }
